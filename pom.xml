@@ -19,9 +19,9 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:https://github.com/onekit-cloud-java/toutiao.git</connection>
-        <developerConnection>scm:git:https://github.com/onekit-cloud-java/toutiao.git</developerConnection>
-        <url>git:https://github.com/onekit-cloud-java/toutiao.git</url>
+        <connection>scm:git:https://github.com/onekit-cloud-java/baidu.git</connection>
+        <developerConnection>scm:git:https://github.com/onekit-cloud-java/baidu.git</developerConnection>
+        <url>git:https://github.com/onekit-cloud-java/baidu.git</url>
     </scm>
     <developers>
         <developer>
