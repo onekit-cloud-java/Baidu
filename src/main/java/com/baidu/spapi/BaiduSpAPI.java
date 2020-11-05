@@ -30,7 +30,7 @@ public abstract class BaiduSpAPI {
         private String error;
         private String error_description;
     }
-
+/////////////////////////
     public static class oauth$jscode2sessionkey_body {
         private String code;
 
@@ -63,11 +63,28 @@ public abstract class BaiduSpAPI {
     }
 
     public abstract oauth$jscode2sessionkey_response oauth$jscode2sessionkey(
-            String Content_Type,
             oauth$jscode2sessionkey_body body
     ) throws Error;
 
     public static class oauth$jscode2sessionkey_response {
+private String openid;
 
+        public String getOpenid() {
+            return openid;
+        }
+
+        public void setOpenid(String openid) {
+            this.openid = openid;
+        }
+
+        public String getSession_key() {
+            return session_key;
+        }
+
+        public void setSession_key(String session_key) {
+            this.session_key = session_key;
+        }
+
+        private String session_key;
     }
 }
