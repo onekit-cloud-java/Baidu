@@ -1,6 +1,7 @@
 package com.baidu.openapi;
 
 public abstract class BaiduOpenAPI {
+
     public static class smartapp$getunionid_body {
         public String getOpenid() {
             return openid;

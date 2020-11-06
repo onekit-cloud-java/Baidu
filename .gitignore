@@ -28,3 +28,9 @@ hs_err_pid*
 .idea/encodings.xml
 .idea/compiler.xml
 target/
+.idea/vcs.xml
+.idea/modules.xml
+.idea/.name
+.idea/$PRODUCT_WORKSPACE_FILE$
+src/main/java/com/baidu/openapi/BaiduOpenAPI.java
+Baidu.iml
