@@ -1,74 +1,20 @@
 package com.baidu.openapi;
 
+import com.baidu.openapi.entity.*;
+
 public abstract class BaiduOpenAPI {
 
-    public static class smartapp$getunionid_body {
-        public String getOpenid() {
-            return openid;
-        }
 
-        public void setOpenid(String openid) {
-            this.openid = openid;
-        }
+    public abstract smartapp_getunionid_response smartapp_getunionid(String access_token, smartapp_getunionid_body body);
 
-        private String openid;
-    }
-    public abstract smartapp$getunionid_response smartapp$getunionid(
-            String access_token,
-            smartapp$getunionid_body body
-    );
+    public abstract token_response token(String grant_type, String client_id, String client_secret, String scope);
 
-    public static class smartapp$getunionid_response {
-        public static class smartapp$getunionid_response_data {
-            public String getUnionid() {
-                return unionid;
-            }
+    public abstract  byte[] smartapp_qrcode_get(String access_token, smartapp_qrcode_get_body body) throws BaiduError;
 
-            public void setUnionid(String unionid) {
-                this.unionid = unionid;
-            }
+    public abstract  byte[] smartapp_qrcode_getunlimited(String access_token, smartapp_qrcode_getunlimited_body body) throws BaiduError;
 
-            private String unionid;
-        }
+    public abstract smartapp_message_custom_send_response smartapp_message_custom_send(String access_token, smartapp_message_custom_send_body body);
 
-        private int errno;
 
-        public int getErrno() {
-            return errno;
-        }
-
-        public void setErrno(int errno) {
-            this.errno = errno;
-        }
-
-        public String getErrmsg() {
-            return errmsg;
-        }
-
-        public void setErrmsg(String errmsg) {
-            this.errmsg = errmsg;
-        }
-
-        public String getRequest_id() {
-            return request_id;
-        }
-
-        public void setRequest_id(String request_id) {
-            this.request_id = request_id;
-        }
-
-        public smartapp$getunionid_response_data getData() {
-            return data;
-        }
-
-        public void setData(smartapp$getunionid_response_data data) {
-            this.data = data;
-        }
-
-        private String errmsg;
-        private String request_id;
-        private smartapp$getunionid_response_data data;
-    }
-    /////////////////////////////
 
 }
