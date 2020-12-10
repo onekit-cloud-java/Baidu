@@ -1,9 +1,10 @@
 package com.baidu.openapi.entity;
-
+@SuppressWarnings("unused")
 public class BaiduError extends Exception {
     private int errno;
     private String errmsg;
     private String request_id;
+
 
     public int getErrno() {
         return errno;

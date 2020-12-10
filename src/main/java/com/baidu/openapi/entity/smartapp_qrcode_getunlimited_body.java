@@ -1,5 +1,5 @@
 package com.baidu.openapi.entity;
-
+@SuppressWarnings("unused")
 public class smartapp_qrcode_getunlimited_body {
     private String path;
     private int width;

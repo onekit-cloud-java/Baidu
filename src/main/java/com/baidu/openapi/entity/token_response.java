@@ -1,5 +1,5 @@
 package com.baidu.openapi.entity;
-
+@SuppressWarnings("unused")
 public class token_response {
     private String access_token;
     private String expires_in;

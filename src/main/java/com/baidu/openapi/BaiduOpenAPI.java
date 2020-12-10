@@ -2,10 +2,11 @@ package com.baidu.openapi;
 
 import com.baidu.openapi.entity.*;
 
+@SuppressWarnings("unused")
 public abstract class BaiduOpenAPI {
 
 
-    public abstract smartapp_getunionid_response smartapp_getunionid(String access_token, smartapp_getunionid_body body);
+    //public abstract smartapp_getunionid_response smartapp_getunionid(String access_token, smartapp_getunionid_body body);
 
     public abstract token_response token(String grant_type, String client_id, String client_secret, String scope);
 

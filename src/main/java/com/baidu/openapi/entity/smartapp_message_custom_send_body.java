@@ -1,5 +1,5 @@
 package com.baidu.openapi.entity;
-
+@SuppressWarnings("unused")
 public class smartapp_message_custom_send_body {
     private int user_type;
     private String open_id;

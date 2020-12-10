@@ -1,6 +1,6 @@
 package com.baidu.spapi.entity;
 
-
+@SuppressWarnings("unused")
 public class Error extends Exception {
 
     private int errno;

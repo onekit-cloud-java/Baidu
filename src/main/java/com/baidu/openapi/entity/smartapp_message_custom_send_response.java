@@ -1,5 +1,5 @@
 package com.baidu.openapi.entity;
-
+@SuppressWarnings("unused")
 public class smartapp_message_custom_send_response {
     private int errno;
     private String msg;
